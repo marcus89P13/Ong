@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veja em detalhes os projetos em andamento da [Nome da ONG].">
+    <title>Nossos Projetos - Nome da ONG</title>
+    <link rel="stylesheet" href="Design System.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo da [Nome da ONG]">
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta-group">
+                <a href="doar.html" class="btn btn-primary btn-header-desktop">Quero Doar</a>
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span id="hamburger-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Nossos Projetos</h1>
+                <p>Onde sua ajuda se transforma em ação.</p>
+            </div>
+        </section>
+
+        <section class="project-filters">
+            <div class="container">
+                <nav class="filter-nav">
+                    <ul>
+                        <li><button class="btn-filter active" data-filter="todos">Todos</button></li>
+                        <li><button class="btn-filter" data-filter="educacao">Educação</button></li>
+                        <li><button class="btn-filter" data-filter="alimentacao">Alimentação</button></li>
+                        <li><button class="btn-filter" data-filter="meio-ambiente">Meio Ambiente</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="project-list">
+            <div class="container">
+                <article class="project-list-item" data-category="educacao">
+                    <div class="project-item-image">
+                        <img src="assets/images/projeto-1.jpg" alt="Crianças em sala de aula">
+                    </div>
+                    <div class="project-item-content">
+                        <span class="project-category">Educação</span>
+                        <h3>Educação para Todos</h3>
+                        <p>Este projeto oferece aulas de reforço escolar, oficinas de leitura e acesso a computadores
+                            para mais de 200 crianças em comunidades de baixa renda. Acreditamos no poder transformador
+                            da educação.</p>
+                        <div class="project-item-actions">
+                            <a href="doar.html?projeto=educacao" class="btn btn-primary">Doar para este Projeto</a>
+                            <a href="voluntariado.html#vaga-professor" class="btn-link">Quero ser voluntário</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-item" data-category="alimentacao">
+                    <div class="project-item-image">
+                        <img src="assets/images/projeto-2.jpg" alt="Distribuição de alimentos">
+                    </div>
+                    <div class="project-item-content">
+                        <span class="project-category">Alimentação</span>
+                        <h3>Cozinha Solidária</h3>
+                        <p>Diariamente, nossa cozinha prepara e distribui mais de 500 refeições para pessoas em situação
+                            de rua. Contamos com doações de alimentos de parceiros e com uma equipe dedicada de
+                            voluntários.</p>
+                        <div class="project-item-actions">
+                            <a href="doar.html?projeto=cozinha" class="btn btn-primary">Apoiar a Cozinha</a>
+                            <a href="voluntariado.html#vaga-cozinha" class="btn-link">Quero ser voluntário</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-list-item" data-category="meio-ambiente">
+                    <div class="project-item-image">
+                        <img src="assets/images/projeto-3.jpg" alt="Mutirão de limpeza de praia">
+                    </div>
+                    <div class="project-item-content">
+                        <span class="project-category">Meio Ambiente</span>
+                        <h3>Mar Limpo</h3>
+                        <p>Promovemos mutirões mensais de limpeza nas praias da região, além de palestras em escolas
+                            sobre a importância da reciclagem e da redução do consumo de plástico. Junte-se a nós para
+                            proteger nossos oceanos.</p>
+                        <div class="project-item-actions">
+                            <a href="doar.html?projeto=mar" class="btn btn-primary">Apoiar esta Causa</a>
+                            <a href="voluntariado.html#vaga-mutirao" class="btn-link">Participar do Mutirão</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <img src="assets/images/logo-footer.png" alt="Logo da [Nome da ONG]">
+                    <p>Transformando vidas desde 2005.</p>
+                </div>
+                <div class="footer-nav">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="sobre.html">Sobre Nós</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="transparencia.html">Transparência</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-actions">
+                    <h4>Ajude</h4>
+                    <ul>
+                        <li><a href="doar.html">Doar</a></li>
+                        <li><a href="voluntariado.html">Ser Voluntário</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Siga-nos</h4>
+                    <a href="#" aria-label="Link para o Instagram">Insta</a>
+                    <a href="#" aria-label="Link para o Facebook">Face</a>
+                    <a href="#" aria-label="Link para o LinkedIn">Link</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 [Nome da ONG]. Todos os direitos reservados. CNPJ: 00.000.000/0001-00</p>
+                <p><a href="/politica-privacidade.html">Política de Privacidade</a> | <a href="/termos-uso.html">Termos
+                        de Uso</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

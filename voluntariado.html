@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seja um voluntário. Encontre vagas de voluntariado na sua área.">
+    <title>Seja Voluntário - Nome da ONG</title>
+    <link rel="stylesheet" href="Design System.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo da [Nome da ONG]">
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta-group">
+                <a href="doar.html" class="btn btn-primary btn-header-desktop">Quero Doar</a>
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span id="hamburger-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Seja Voluntário</h1>
+                <p>Doe seu tempo e talento. Faça parte da nossa equipe.</p>
+            </div>
+        </section>
+
+        <section class="project-filters">
+            <div class="container">
+                <nav class="filter-nav">
+                    <ul>
+                        <li><button class="btn-filter active" data-filter="todas">Todas as Vagas</button></li>
+                        <li><button class="btn-filter" data-filter="educacao">Educação</button></li>
+                        <li><button class="btn-filter" data-filter="eventos">Eventos</button></li>
+                        <li><button class="btn-filter" data-filter="admin">Administrativo</button></li>
+                        <li><button class="btn-filter" data-filter="remoto">Remoto</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="volunteer-grid">
+            <div class="container">
+                <div class="opportunity-grid">
+
+                    <article class="opportunity-card" data-category="educacao remoto">
+                        <div class="card-content">
+                            <span class="opportunity-category">Educação / Remoto</span>
+                            <h4>Professor de Reforço (Online)</h4>
+                            <p>Ajude crianças e adolescentes com dificuldades em matemática e português. Tudo de forma
+                                remota, de onde você estiver.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span><i class="icon-time"></i> 4 horas / semana</span>
+                            <span><i class="icon-location"></i> Remoto</span>
+                            <a href="#vaga-professor" class="btn btn-primary btn-small">Quero essa vaga</a>
+                        </div>
+                    </article>
+
+                    <article class="opportunity-card" data-category="eventos">
+                        <div class="card-content">
+                            <span class="opportunity-category">Eventos</span>
+                            <h4>Monitor para Evento Beneficente</h4>
+                            <p>Estamos organizando nossa feira anual de arrecadação. Precisamos de ajuda com recepção,
+                                organização e logística no dia.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span><i class="icon-time"></i> 8 horas (Dia único)</span>
+                            <span><i class="icon-location"></i> Sede - São Paulo</span>
+                            <a href="#vaga-evento" class="btn btn-primary btn-small">Quero essa vaga</a>
+                        </div>
+                    </article>
+
+                    <article class="opportunity-card" data-category="admin remoto">
+                        <div class="card-content">
+                            <span class="opportunity-category">Administrativo / Remoto</span>
+                            <h4>Auxiliar de Redes Sociais</h4>
+                            <p>Crie posts, responda comentários e ajude a divulgar nossa causa. Vaga ideal para
+                                estudantes de comunicação ou marketing.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span><i class="icon-time"></i> 6 horas / semana</span>
+                            <span><i class="icon-location"></i> Remoto</span>
+                            <a href="#vaga-social" class="btn btn-primary btn-small">Quero essa vaga</a>
+                        </div>
+                    </article>
+
+                    <article class="opportunity-card" data-category="admin">
+                        <div class="card-content">
+                            <span class="opportunity-category">Administrativo</span>
+                            <h4>Organização de Doações</h4>
+                            <p>Ajude em nossa sede a separar, catalogar e organizar as doações de roupas e alimentos que
+                                recebemos diariamente.</p>
+                        </div>
+                        <div class="card-footer">
+                            <span><i class="icon-time"></i> 4 horas / semana</span>
+                            <span><i class="icon-location"></i> Sede - São Paulo</span>
+                            <a href="#vaga-doacoes" class="btn btn-primary btn-small">Quero essa vaga</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="vaga-form-section" class="volunteer-form-section">
+            <div class="container">
+                <div class="donation-form-wrapper" style="max-width: 800px; margin: auto;">
+                    <form id="volunteer-form" class="donation-form">
+                        <fieldset>
+                            <legend>Inscrição para Voluntariado</legend>
+                            <p class="form-intro">Preencha seus dados e nossa equipe entrará em contato.</p>
+
+                            <div class="form-group">
+                                <label for="volunteer-name">Nome Completo</label>
+                                <input type="text" id="volunteer-name" name="volunteer-name" class="form-input"
+                                    required>
+                            </div>
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label for="volunteer-email">E-mail</label>
+                                    <input type="email" id="volunteer-email" name="volunteer-email" class="form-input"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="volunteer-phone">Telefone / WhatsApp</label>
+                                    <input type="tel" id="volunteer-phone" name="volunteer-phone" class="form-input"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-vaga">Vaga de Interesse</label>
+                                <select id="volunteer-vaga" name="volunteer-vaga" class="form-input">
+                                    <option value="">Selecione a vaga...</option>
+                                    <option value="professor-online">Professor de Reforço (Online)</option>
+                                    <option value="monitor-evento">Monitor para Evento Beneficente</option>
+                                    <option value="social-media">Auxiliar de Redes Sociais</option>
+                                    <option value="organizacao">Organização de Doações</option>
+                                    <option value="outra">Outra / Banco de Talentos</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="volunteer-message">Fale um pouco sobre você e por que quer ser
+                                    voluntário</label>
+                                <textarea id="volunteer-message" name="volunteer-message" rows="5"
+                                    class="form-input"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-large btn-full">Enviar Inscrição</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

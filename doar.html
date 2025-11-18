@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Faça sua doação de forma rápida e segura. Aceitamos Pix.">
+    <title>Faça sua Doação - Nome da ONG</title>
+    <link rel="stylesheet" href="Design System.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo da [Nome da ONG]">
+            </a>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="como-ajudar.html">Como Ajudar</a></li>
+                    <li><a href="transparencia.html">Transparência</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta-group">
+                <a href="doar.html" class="btn btn-primary btn-header-desktop">Quero Doar</a>
+                <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="main-nav"
+                    aria-expanded="false">
+                    <span id="hamburger-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Faça sua Doação</h1>
+                <p>Sua contribuição muda vidas. É rápido, fácil e seguro.</p>
+            </div>
+        </section>
+
+        <section class="donation-page">
+            <div class="container">
+                <div class="donation-layout">
+
+                    <div class="donation-form-wrapper">
+                        <form id="donation-form" class="donation-form">
+
+                            <fieldset>
+                                <legend>1. Escolha o valor</legend>
+                                <div class="amount-options">
+                                    <button type="button" class="btn-amount" data-value="50">R$ 50</button>
+                                    <button type="button" class="btn-amount active" data-value="100">R$ 100</button>
+                                    <button type="button" class="btn-amount" data-value="200">R$ 200</button>
+                                </div>
+                                <div class="form-group">
+                                    <label for="custom-amount">Ou digite outro valor (R$)</label>
+                                    <input type="number" id="custom-amount" name="custom-amount" placeholder="100"
+                                        class="form-input">
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>2. Seus dados (para recibo)</legend>
+                                <div class="form-group">
+                                    <label for="donor-name">Nome Completo</label>
+                                    <input type="text" id="donor-name" name="donor-name" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donor-email">E-mail</label>
+                                    <input type="email" id="donor-email" name="donor-email" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="donor-cpf">CPF (para nota fiscal)</label>
+                                    <input type="text" id="donor-cpf" name="donor-cpf" class="form-input"
+                                        placeholder="000.000.000-00" required>
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>3. Forma de Pagamento</legend>
+                                <div class="payment-tabs">
+                                    <button type="button" class="tab-link active" data-target="pix-panel">
+                                        <i class="icon-pix"></i> Pix
+                                    </button>
+                                    <button type="button" class="tab-link" data-target="cartao-panel">
+                                        <i class="icon-card"></i> Cartão de Crédito
+                                    </button>
+                                </div>
+
+                                <div class="payment-panels">
+                                    <div id="pix-panel" class="payment-panel active">
+                                        <p>Para doar, aponte a câmera do seu celular para o QR Code abaixo ou use o
+                                            "Copia e Cola".</I>
+                                        <div class="pix-display">
+                                            <img src="assets/images/qr-code-pix.png"
+                                                alt="QR Code para pagamento via Pix">
+                                            <h4>Chave Copia e Cola</h4>
+                                            <div class="pix-copy">
+                                                <span>00020126... (chave pix simulada) ...5303986</span>
+                                                <button type="button" class="btn-copy">Copiar</button>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-large btn-full">Finalizar
+                                            Doação (Já paguei)</button>
+                                    </div>
+
+                                    <div id="cartao-panel" class="payment-panel hidden">
+                                        <div class="form-group">
+                                            <label for="card-number">Número do Cartão</label>
+                                            <input type="text" id="card-number" name="card-number" class="form-input"
+                                                placeholder="0000 0000 0000 0000">
+                                        </div>
+                                        <div class="form-grid-2">
+                                            <div class="form-group">
+                                                <label for="card-expiry">Validade (MM/AA)</label>
+                                                <input type="text" id="card-expiry" name="card-expiry"
+                                                    class="form-input" placeholder="MM/AA">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="card-cvc">CVC</label>
+                                                <input type="text" id="card-cvc" name="card-cvc" class="form-input"
+                                                    placeholder="123">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-large btn-full">Doar R$ 100 com
+                                            Cartão</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <aside class="donation-info">
+                        <h3>Sua doação é segura</h3>
+                        <p>Seus dados são protegidos por criptografia SSL. Não armazenamos os dados do seu cartão.</p>
+                        <div class="security-badges">
+                            <img src="assets/images/badge-ssl.png" alt="Selo SSL de site seguro">
+                            <img src="assets/images/badge-pci.png" alt="Selo PCI de segurança">
+                        </div>
+                        <hr>
+                        <h4>Para onde vai seu dinheiro?</h4>
+                        <ul>
+                            <li><strong>85%</strong> vão direto para os projetos.</li>
+                            <li><strong>10%</strong> para custos administrativos.</li>
+                            <li><strong>5%</strong> para captação de recursos.</li>
+                        </ul>
+                        <p>Saiba mais em nossa página de <a href="transparencia.html">Transparência</a>.</p>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
